@@ -3,7 +3,7 @@ import numpy as np
 
 
 # Star 1
-data = pd.read_csv('data/day_1.txt', sep='\s+', header=None)
+data = pd.read_csv('day_1_input.txt', sep='\s+', header=None)
 data.columns = ['Team1', 'Team2']
 
 team_1 = data['Team1'].to_numpy()
@@ -25,7 +25,7 @@ for check_1 in team_1:
         if check_1 == check_2:
             count = count + 1
     arr.append(check_1 * count)
-print(sum(arr))
+print(print("Star 2 Answer: " + str(sum(arr))))
     
 
 
